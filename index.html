@@ -1,13 +1,835 @@
-<html>
-  <body>
-<style>
-  body{text-align: center; background-color: #777777;}
-  h1 h3{
-  color: #fff;
-  font-family: serif;
-  }
-</style>
-<h1>Proyecto en construccion</h1>
-<h3>Viniciodev7 Material Design.</h3>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>viniciodev7 - Profile Page</title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+        <meta name="description" content="Vinicio Dev7 Ing. en Informática y Sistemas Computacionales. Diseño y desarrollo Web Latacunga">
+
+        <!-- Fonts and icons-->
+        <!--<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css"><!--Local -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+        <!-- CSS Files -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/rotating-card.css" rel="stylesheet" />
+
+        <link href="assets/css/now-ui-kit.css" rel="stylesheet" />
+        <!-- CSS Just for demo purpose, don't include it in your project -->
+        <link href="assets/css/demo.css" rel="stylesheet" />
+    </head>
+
+    <body class="profile-page">
+        <!--Navbar-->
+        <nav class="navbar navbar-toggleable-md bg-primary fixed-top navbar-transparent" color-on-scroll="500">
+            <div class="container">
+                <div class="dropdown button-dropdown">
+                    <a href="#" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+                        <span class="button-bar"></span>
+                        <span class="button-bar"></span>
+                        <span class="button-bar"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-header">Más habilidades</a>
+                        <a class="dropdown-item" href="#">SEO</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Marketing digital</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Estrategia digital</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">CMS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">WordPress</a>
+                        <a class="dropdown-item" href="#">Joomla</a>
+                    </div>
+                </div>
+                <div class="navbar-translate">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar bar1"></span>
+                        <span class="navbar-toggler-bar bar2"></span>
+                        <span class="navbar-toggler-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" rel="tooltip" title="Desarrollador web" data-placement="bottom">Viniciodev7</a>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="assets/img/blurred-image-1.jpg">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" rel="tooltip" title="Seguir en Twitter" data-placement="bottom" href="https://twitter.com" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                                <p class="hidden-lg-up">Twitter</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" rel="tooltip" title="Like en Facebook" data-placement="bottom" href="https://www.facebook.com" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                                <p class="hidden-lg-up">Facebook</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" rel="tooltip" title="Seguir en Instagram" data-placement="bottom" href="https://www.instagram.com" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                                <p class="hidden-lg-up">Instagram</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+
+        <!--whapper-->
+        <div class="wrapper">
+            <!--Section page header-->
+            <section class="page-header page-header-small" filter-color="orange">
+                <div class="page-header-image" data-parallax="true" style="background-image: url('assets/img/login.jpg');"></div>
+                <div class="container">
+                    <div class="content-center">
+                        <div class="photo-container">
+                            <img src="assets/img/marco.jpg" alt="">
+                        </div>
+                        <h3 class="title">Viniciodev7</h3>
+                        <p class="category">Desarrollador Web</p>
+                        <div class="content">
+                            <div class="social-description">
+                                <h2>6</h2>
+                                <p>Diseños Web</p>
+                            </div>
+                            <div class="social-description">
+                                <h2>7</h2>
+                                <p>Aplicaciones Web</p>
+                            </div>
+                            <div class="social-description">
+                                <h2>2</h2>
+                                <p>Aplicaciónes Móviles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--/Fin Section page header-->
+
+            <div class="section">
+                <div class="container">
+                    <div class="button-container">
+                        <a href="#button" class="btn btn-primary btn-round btn-lg">Seguir</a>
+                        <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Seguir en Twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Seguir en Instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <h3 class="title">Sobre mí</h3>
+                    <h5 class="description text-justify">Ingeniero en Informática y Sistemas Computacionales, capaz de dar soluciones a problemas planteados en el manejo y manipulación de información aplicando análisis, diseño y construcción de sistemas informáticos. Apto para el manejo de herramientas tecnológicas de vanguardia, proactivo y en constante preparación y aprendizaje ante los cambios de las nuevas tecnologías.</h5>
+
+                    <!--Row Mi Portafolio-->
+                    <div class="row">
+                        <!--Portafolio Title-->
+                        <div class="col-md-6 offset-md-3">
+                            <h4 class="title text-center">Mi Portafolio</h4>
+                            <div class="nav-align-center">
+                                <ul class="nav nav-pills nav-pills-primary" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#desarrollo" role="tablist"><i class="now-ui-icons design-2_html5"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#disenio" role="tablist"><i class="now-ui-icons design_palette"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#movil" role="tablist"><i class="now-ui-icons tech_mobile"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--/Fin Portafolio Title-->
+
+                        <!-- Tab panes -->
+                        <div class="tab-content gallery" id="galeria">
+                            <div class="tab-pane active" id="disenio" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1">
+                                        <h4 class="titulos-demos">Proyectos diseño web</h4>
+                                        <div class="row collections">
+                                            <div class="col-md-6">
+                                                <a href="#" data-toggle="modal" data-target="#myModal">
+                                                <img src="assets/img/d.jpg" class="img-raised">
+                                                <img src="assets/img/d2.jpg" alt="" class="img-raised"></a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" data-toggle="modal" data-target="#myModal">
+                                                <img src="assets/img/d3.jpg" alt="" class="img-raised">
+                                                <img src="assets/img/d4.jpg" alt="" class="img-raised"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="desarrollo" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1">
+                                        <h4 class="titulos-demos">Proyectos aplicaciones web</h4>
+                                        <div class="row collections">
+                                            <div class="col-md-6">
+                                                <a href="#" data-toggle="modal" data-target="#myModal">
+                                                <img src="assets/img/p1.jpg" alt="Yokocomputacion" class="img-raised">
+                                                <img src="assets/img/p4.jpg" alt="" class="img-raised"></a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" data-toggle="modal" data-target="#myModal">
+                                                <img src="assets/img/p3.jpg" alt="" class="img-raised">
+                                                <img src="assets/img/p2.jpg" alt="" class="img-raised"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="movil" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1">
+                                        <h4 class="titulos-demos">Proyectos aplicaciones móviles</h4>
+                                        <div class="row collections">
+                                            <div class="col-md-4">
+                                                <a href="#" data-toggle="modal" data-target="#myModal">
+                                                <img src="assets/img/m1.jpg" alt="" class="img-raised">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <a href="#" data-toggle="modal" data-target="#myModal">
+                                                <img src="assets/img/m2.jpg" alt="" class="img-raised">
+                                                </a>
+                                            </div>
+                                             <div class="col-md-4">
+                                                <a href="#" data-toggle="modal" data-target="#myModal">
+                                                <img src="assets/img/m3.jpg" alt="" class="img-raised">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/Fin Row Mi Portafolio-->
+
+                    <!--Row Card Title Web-->
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <h4 class="title text-center">Habilidades desarrollo web FrontEnd</h4>
+                        </div>
+                    </div> <!--/Fin Row Card Title Web-->
+
+                    <!--Row Card Item 1-->
+                    <div class="row">
+
+                        <!--Col sm 3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <!--Card Item 1-->
+                            <div class="card-container-rotate">
+                                <!--Card-->
+                                <div class="card-rotate">
+                                    <!--Front panel-->
+                                    <div class="front-rotate">
+                                        <div class="cover"><img src="assets/img/blue.jpg"/></div>
+                                        <div class="user"><i class="fa fa-css3"></i></div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h3 class="name">CSS</h3>
+                                                <p class="profession">Cascading Style Sheets</p>
+                                                <p class="text-center">El único lenguaje de diseño para la web </p>
+                                            </div>
+                                            <div class="footer-rotate"><i class="fa fa-mail-forward"></i> Conocimiento %</div>
+                                        </div>
+                                    </div><!--/Fin front panel -->
+
+                                    <!--Back panel-->
+                                    <div class="back">
+                                        <div class="header-rotate"><h5 class="motto-rotate">Habilidad con CSS</h5></div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h4 class="text-center">CSS 85% - SASS 65%</h4>
+                                                <p class="text-center">Frameworks CSS </p>
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>80%</h4>
+                                                        <p>Bootstrap</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>75%</h4>
+                                                        <p>Foundation</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>60%</h4>
+                                                        <p>Materialice</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--/Fin back panel -->
+                                </div><!--/Fin Card -->
+                            </div><!--/Fin Card Item 1-->
+                        </div><!--/Fin Col sm 3 -->
+
+                        <!--Col sm 3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <!--Card Item 2-->
+                            <div class="card-container-rotate">
+                                <div class="card-rotate">
+                                    <div class="front-rotate">
+                                        <div class="cover"><img src="assets/img/orange.jpg"/></div>
+                                        <div class="user"><i class="fa fa-html5"></i></div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h3 class="name">HTML</h3>
+                                                <p class="profession">HyperText Markup Lenguage</p>
+                                                <p class="text-center">Lenguaje de etiquetas que define la estructura y semántica de la web</p>
+                                            </div>
+                                            <div class="footer-rotate"><i class="fa fa-mail-forward"></i> Conocimiento %</div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header-rotate"><h5 class="motto-rotate">Nivel de conocimiento en html5 </h5></div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h4 class="text-center">HTML5</h4>
+                                                <p class="text-center">Para que un sitio web sea óptimo es necesario utilizar las etiquetas de manera adecuada</p>
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4></h4>
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>85%</h4>
+                                                        <p>HTML5</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4></h4>
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--/Fin back panel -->
+                                </div><!--/Fin Card -->
+                            </div><!--/Fin Card Item 1-->
+                        </div><!--/Fin Col sm 3 -->
+
+
+                        <div class="col-md-4 col-sm-6">
+                            <!--Card Item 3-->
+                            <div class="card-container-rotate">
+                                <div class="card-rotate">
+                                    <div class="front-rotate">
+                                        <div class="cover">
+                                            <img src="assets/img/yellow.jpg"/>
+                                        </div>
+                                        <div class="user">
+                                            <i class="fa fa-code"></i>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h3 class="name">JavaScript</h3>
+                                                <p class="profession">Lenguaje de script para la web</p>
+                                                <p class="text-center">El verdadero  lenguaje de programación para web</p>
+                                            </div>
+                                            <div class="footer-rotate">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i> Conocimiento %
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header-rotate">
+                                            <h5 class="motto-rotate">Habilidad con JavaScript</h5>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h4 class="text-center">JavaScript</h4>
+                                                <p class="text-center">Es el lenguaje más importante de  la web,  conocer  sus  tecnologías derivadas es importante</p>
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>70%</h4>
+                                                        <p>JScript</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>60%</h4>
+                                                        <p>JQuery</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>60%</h4>
+                                                        <p>Ajax</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div><!-- end card-container Card Item 3-->
+                        </div><!-- end col-sm-3 -->
+                    </div><!--/Fin Row Card Item 1-->
+
+
+                    <!--Item Card 2-->
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <h4 class="title text-center">Habilidades desarrollo web BackEnd</h4>
+                        </div>
+                    </div>
+                    <!--Cards Item 2-->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <!--Card Item 1-->
+                            <div class="card-container-rotate">
+                                <div class="card-rotate">
+                                    <div class="front-rotate">
+                                        <div class="cover">
+                                            <img src="assets/img/purple.jpg"/>
+                                        </div>
+                                        <div class="user">
+                                           <i class="fa fa-code"></i>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h3 class="name">PHP</h3>
+                                                <p class="profession">Pre Hypertext Processor</p>
+                                                <p class="text-center">Lenguaje de programación del lado del servidor considerado uno de los más flexibles, potentes y de alto rendimiento</p>
+                                            </div>
+                                            <div class="footer-rotate">
+                                                <i class="fa fa-mail-forward"></i> Conocimiento %
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+
+                                    <div class="back">
+                                        <div class="header-rotate">
+                                            <h5 class="motto-rotate">Habilidad con PHP</h5>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h4 class="text-center">PHP 75%</h4>
+                                                <p class="text-center">Frameworks PHP</p>
+
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>60%</h4>
+                                                        <p>CodeIgnaiter</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>50%</h4>
+                                                        <p>Laravel</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>5</h4>
+                                                        <p>Proyectos</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container card item 1-->
+                        </div> <!-- end col sm 3 -->
+
+                        <div class="col-md-4 col-sm-6">
+                            <!--Card Item 2-->
+                            <div class="card-container-rotate">
+                                <div class="card-rotate">
+                                    <div class="front-rotate">
+                                        <div class="cover">
+                                            <img src="assets/img/redd.jpg"/>
+                                        </div>
+                                        <div class="user">
+                                            <i class="fa fa-code"></i>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h3 class="name">JAVA</h3>
+                                                <p class="profession">Lenguaje de programación JAVA</p>
+                                                <p class="text-center">Lenguaje de programación que soporta el paradigma orientado a objetos e imperativo</p>
+                                            </div>
+                                            <div class="footer-rotate">
+                                                <i class="fa fa-mail-forward"></i> Conocimiento %
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header-rotate">
+                                            <h5 class="motto-rotate">Habilidad con JAVA</h5>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h4 class="text-center">JAVA 50%</h4>
+                                                <p class="text-center">Frameworks JAVA para la Web</p>
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>30%</h4>
+                                                        <p>PLAY</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>20%</h4>
+                                                        <p>Spring</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>15%</h4>
+                                                        <p>Jogger</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container Card Item 2-->
+                        </div> <!-- end col sm 3 -->
+
+                        <div class="col-md-4 col-sm-6">
+                            <!--Card Item 3-->
+                            <div class="card-container-rotate">
+                                <div class="card-rotate">
+                                    <div class="front-rotate">
+                                        <div class="cover">
+                                            <img src="assets/img/green.jpg"/>
+                                        </div>
+                                        <div class="user">
+                                            <i class="fa fa-code"></i>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h3 class="name">C#</h3>
+                                                <p class="profession">CSharp</p>
+
+                                                <p class="text-center">Lenguaje de programación de Microsoft robusto y de alto desempeño</p>
+                                            </div>
+                                            <div class="footer-rotate">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i> Conocimiento %
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header-rotate">
+                                            <h5 class="motto-rotate">Habilidad con C#</h5>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h4 class="text-center">15%</h4>
+                                                <p class="text-center">C# para la web</p>
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>235</h4>
+                                                        <p>Followers</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>114</h4>
+                                                        <p>Following</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>35</h4>
+                                                        <p>Projects</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container Card Item 3-->
+                        </div> <!-- end col-sm-3 -->
+                    </div>
+                    <!--/Fin Cards Item 2-->
+
+                    <!--Item Card 3-->
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <h4 class="title text-center">Habilidades bases de datos</h4>
+                        </div>
+                    </div>
+                    <!--Cards itme 3-->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <!--Card Item 1-->
+                            <div class="card-container-rotate">
+                                <div class="card-rotate">
+                                    <div class="front-rotate">
+                                        <div class="cover">
+                                            <img src="assets/img/oranged.jpg"/>
+                                        </div>
+                                        <div class="user">
+                                           <i class="fa fa-database"></i>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h3 class="name">MySQL</h3>
+                                                <p class="profession">Cascading Style Sheets</p>
+                                                <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                                            </div>
+                                            <div class="footer-rotate">
+                                                <i class="fa fa-mail-forward"></i> Mas detalles
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header-rotate">
+                                            <h5 class="motto-rotate">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h4 class="text-center">Job Description</h4>
+                                                <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>235</h4>
+                                                        <p>Followers</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>114</h4>
+                                                        <p>Following</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>35</h4>
+                                                        <p>Projects</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-rotate">
+                                            <div class="social-links text-center">
+                                                <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div><!-- end card -->
+                            </div><!-- end card-container card item 1-->
+                        </div><!-- end col sm 3 -->
+
+                        <div class="col-md-4 col-sm-6">
+                            <!--Card Item 2-->
+                            <div class="card-container-rotate">
+                                <div class="card-rotate">
+                                    <div class="front-rotate">
+                                        <div class="cover">
+                                            <img src="assets/img/blued.jpg"/>
+                                        </div>
+                                        <div class="user">
+                                            <i class="fa fa-database"></i>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h3 class="name">SQLServer</h3>
+                                                <p class="profession">HyperText Markup Lenguage</p>
+                                                <p class="text-center">"HyperText Markup Lenguage <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p>
+                                            </div>
+                                            <div class="footer-rotate">
+                                                <i class="fa fa-mail-forward"></i> Mas detalles
+                                            </div>
+                                        </div>
+                                    </div><!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header-rotate">
+                                            <h5 class="motto-rotate">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h4 class="text-center">Job Description</h4>
+                                                <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>235</h4>
+                                                        <p>Followers</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>114</h4>
+                                                        <p>Following</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>35</h4>
+                                                        <p>Projects</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-rotate">
+                                            <div class="social-links text-center">
+                                                <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div><!-- end back panel -->
+                                </div><!-- end card -->
+                            </div><!-- end card-container Card Item 2-->
+                        </div> <!-- end col sm 3 -->
+
+                        <div class="col-md-4 col-sm-6">
+                            <!--Card Item 3-->
+                            <div class="card-container-rotate">
+                                <div class="card-rotate">
+                                    <div class="front-rotate">
+                                        <div class="cover">
+                                            <img src="assets/img/red.jpg"/>
+                                        </div>
+                                        <div class="user">
+                                            <i class="fa fa-database"></i>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h3 class="name">Oracle</h3>
+                                                <p class="profession">Dar funcionalidad a la web</p>
+                                                <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                                            </div>
+                                            <div class="footer-rotate">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header-rotate">
+                                            <h5 class="motto-rotate">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content-rotate">
+                                            <div class="main-rotate">
+                                                <h4 class="text-center">Job Description</h4>
+                                                <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>235</h4>
+                                                        <p>Followers</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>114</h4>
+                                                        <p>Following</p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>35</h4>
+                                                        <p>Projects</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-rotate">
+                                            <div class="social-links text-center">
+                                                <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container Card Item 3-->
+                        </div> <!-- end col-sm-3 -->
+                    </div>
+                    <!--/Fin Cards Item 3-->
+
+                    <!--Contacto-->
+                    <section class="section section-contact-us text-center">
+                        <div class="container">
+                            <h2 class="title">¿Deseas contactarte?</h2>
+                            <p class="description">Ingresa los datos requeridos.</p>
+                            <div class="row">
+                                <div class="col-lg-6 text-center offset-lg-3 col-md-8 offset-md-2">
+                                    <div class="input-group form-group-no-border input-lg">
+                                        <span class="input-group-addon">
+                                            <i class="now-ui-icons users_circle-08"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Su nombre...">
+                                    </div>
+                                    <div class="input-group form-group-no-border input-lg">
+                                        <span class="input-group-addon">
+                                            <i class="now-ui-icons ui-1_email-85"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Su Email...">
+                                    </div>
+                                    <div class="textarea-container" style="margin: .8em">
+                                        <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Su mensaje..."></textarea>
+                                    </div>
+                                    <br>
+                                    <div class="send-button">
+                                        <a href="#" class="btn btn-primary btn-round btn-block btn-lg">Enviar mensaje</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><!--Fin contacto-->
+                </div>
+            </div>
+
+            <footer class="footer footer-default">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="#">Proyectos</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Información</a></li>
+                        </ul>
+                    </nav>
+                    <div class="copyright">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>, Diseñado por
+                        <a href="#">Viniciodev7</a>. Código
+                        <a href="#">Viniciodev7</a>.
+                    </div>
+                </div>
+            </footer>
+
+
+            <!-- Mini Modal -->
+            <section class="modal fade modal-mini modal-warning" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center">
+                            <div class="modal-profile"><i class="now-ui-icons shopping_box"></i></div>
+                        </div>
+                        <div class="modal-body"><p>El proyecto es privado</p></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-link btn-neutral"></button>
+                            <button type="button" class="btn btn-link btn-neutral" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </section><!--  End Modal -->
+
+        </div><!--Fin whapper-->
+
+    </body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+    <script src="assets/js/core/tether.min.js" type="text/javascript"></script>
+    <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="assets/js/plugins/bootstrap-switch.js" ></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <script src="assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+    <script src="assets/js/now-ui-kit.js" type="text/javascript"></script>
+
+     <!--Script Scroll-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // the body of this function is in assets/js/now-ui-kit.js
+            //nowuiKit.initSliders();
+        });
+
+        function scrollToDownload() {
+            if ($('#galeria').length != 0) {
+                $("html, body").animate({
+                scrollTop: $('.gallery').offset().top
+                }, 1000);
+            }
+        }
+    </script>
+
 </html>
